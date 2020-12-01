@@ -18,13 +18,22 @@ int main () {
     indx++;
   }
   for (int a = 0; a < 200; a++) {
-    if (flag) {break;}
+
+    if (flag)
+      {break;}
+
     for(int b = 0; b < 200; b++) {
-      if (flag) {break;}
+
+      if (flag)
+        {break;}
+
       for(int c = 0; c < 200; c++) {
+
       if (arr[b]+arr[a]+arr[c] == 2020) {
+
         cout << arr[a]*arr[b]*arr[c] << endl;
         flag = true;
+
         break;
       }
       }
