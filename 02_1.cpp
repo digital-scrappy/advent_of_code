@@ -8,19 +8,15 @@ int main () {
 
   ifstream file("02_input.txt");
   string str;
-  string min_max;
   string password;
   char letter;
   int max;
   int min;
-  string passwords[1000][3];
   string delim_1 = ":";
   string delim_2 = "-";
-  string delim_3 = " ";
   int minus;
   int colon;
   int indx = 0;
-  int letter_count;
   int correct_password_count;
   int i =0;
 
@@ -35,12 +31,8 @@ int main () {
     letter = str.substr(colon-1, 1)[0];
     password = str.substr(colon+2 , str.size() - colon -2);
 
-
-
     if (password[min-1] == letter xor password[max-1] == letter)
       { correct_password_count++ ;}
-
-
 
 
     indx++;
